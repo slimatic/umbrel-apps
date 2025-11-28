@@ -2,32 +2,36 @@ manifestVersion: 1
 id: n8n
 category: automation
 name: n8n
-version: "1.118.2"
+version: "1.121.3"
 releaseNotes: >-
-  This release includes new features, bug fixes and security improvements.
+  This release includes new features, bug fixes and maintenance updates.
 
 
   Key highlights:
-    - AI Agent now properly handles tool outputs and respects maximum iteration limits
-    - AI Builder improvements: better name generation for workflows, fixed scrolling issues, and improved message formatting
-    - Fixed issues with sub-workflow execution and return data formatting
-    - Improved expression handling in HTTP requests and nested workflow nodes
-    - Enhanced security by blocking file access in Merge Node and sanitizing sensitive URLs
-    - Form trigger selection now works correctly
-    - OpenAI Node improvements: better conversation handling and streamlined functionality
-    - Added ability to view past execution data directly in the node detail view
-    - Insights dashboard now supports custom date ranges for better analytics
-    - Project variables can now be synced with source control
-    - SSO and OIDC login improvements: automatic role synchronization and project role provisioning
-    - MongoDB Vector Store now supports easier credential configuration
-    - Projects can now be exported and imported with push/pull operations
-    - Various UI fixes including icon picker display and tool parameter handling
-    - Enhanced security restrictions in native Python runner
-    - Fixed AI Agent v3 tool execution issues
-    - Fixed evaluation loop errors in the editor
+  - Code Node: Reverted to previous icon
+  - Improved database connection health checks and recovery
+  - Enhanced workflow execution data handling and timestamps
+  - Improved reliability for webhook lookups with database fallback
+  - Editor improvements: Better Loop node placement, archived workflow filtering, and auto-selection of operator types
+  - Azure OpenAI Node: Added proxy agent support
+  - Respond to Chat Node can now be used as a tool
+  - Security fix for CVE-2025-12735 (expr-eval dependency)
+  - Form Node: Improved file handling for zip archives
+  - Git Node: Disabled git hooks by default and improved path security
+  - MCP Client Tool Node: Fixed cloud DCR issues, timeout handling, and proxy support
+  - Merge Node: Fixed icon display
+  - Schedule Trigger Node: Added interval boundary display
+  - Slack Node: Enabled pagination for channel listing
+  - AI Builder: Updated prompt suggestions
+  - Airtop Node: Added support for Airtop agents
+  - Azure AI Search: Added Vector Store Node (v2)
+  - SSO Improvements: Better handling of user invites and ACR parameters
+  - Workflow history is now enabled for all users
+  - Improved workflow text search
+  - Various UI/UX improvements including notice background colors
 
 
-  Full release notes are found at https://github.com/n8n-io/n8n/releases
+  Full release notes are found at https://github.com/n8n-io/n8n/releases/tag/n8n%401.121.3
 tagline: Build complex workflows, really fast
 description: >-
   n8n is an extendable workflow automation tool. With a fair-code distribution model, n8n will always have visible source code, 
@@ -55,5 +59,5 @@ gallery:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-submitter: Pranshu Agrawal
-submission: https://github.com/getumbrel/umbrel-apps/pull/283
+submitter: slimatic
+submission: ""
